@@ -1,0 +1,111 @@
+body {
+    padding: 0px 0;
+  }
+  
+  .slick-carousel .slick-item {
+    color: white;
+    background-color: #3498db;
+    min-height: 250px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-carousel .slick-item:hover {
+    opacity: .7
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    background-color:white;
+    content: '';
+  }
+  
+  .slick-arrow {
+    width: 55px;
+    height: 55px;
+    z-index: 5;
+    border-top: 3px solid #06d1a4;
+    border-right: 3px solid #06d1a4;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .slick-arrow:hover {
+    opacity: .5
+  }
+  
+  .slick-prev {
+    left: 1%;
+    top: 40% ;  
+    transform: rotate(225deg);
+  }
+  
+  .slick-next {
+    right: 1%;
+    top: 40% ; 
+    transform: rotate(45deg);
+  }
+  
+  
+  /**!
+  * Caption Styles
+  */
+  
+  .caption-item {  
+    right: 0;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .caption-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  .caption-link .caption-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+  }
+  
+  .caption-layer.green {
+    background: rgba(173, 219, 50, .5);
+  }
+  
+  .caption-layer.light-green {
+    background: rgba(6, 209, 164, .7);
+  }
+  
+  .caption-layer.blue {
+    background: rgba(152, 231, 254, .5);
+  }
+  
+  .caption-link .caption-layer:hover,
+  .caption-layer.video-icon {
+    opacity: 1;
+  }
+  
+  .caption-link .caption-layer .caption-content {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  .caption-link .caption-layer .caption-content p {
+    display: none;
+  }
+  
